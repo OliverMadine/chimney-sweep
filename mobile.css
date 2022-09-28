@@ -1,0 +1,37 @@
+@media (max-width: 801px), (max-aspect-ratio: 16/11) {
+  #desktop-content {
+    display: none;
+  }
+
+  section {
+    padding: 2rem;
+  }
+  
+  img {
+    width:100%;
+    max-width: 520px;
+  }
+
+  a {
+    font-size: 28px;
+  }
+
+  #section-1 {
+    background-color: black;
+    color: white;
+  }
+
+  #contact {
+    padding-top: 0;
+  }
+
+  .text-block {
+    font: 400 18px Helvetica Neue;
+    letter-spacing: 1px;
+    font-kerning: none;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+}

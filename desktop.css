@@ -1,0 +1,115 @@
+@media (min-width: 801px) and (min-aspect-ratio: 16/11) {
+  #mobile-content {
+    display: none;
+  }
+
+  section {
+    height: 100vh;
+  }
+
+  a {
+    font-size: 45px;
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  .underlay {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #section-1 {
+    background: rgba(9, 9, 11);
+    background: linear-gradient(rgba(11, 10, 15) 0%, rgba(0, 0, 0) 90%);
+    color: white;
+  }
+
+  #section-1 .underlay {
+    background-image: url(images/rumbelow-clean.webp);
+  }
+
+  #section-2 {
+    color: black;
+  }
+
+  #section-2 .underlay {
+    background-image: url(images/rumbelow-dirty.webp);
+  }
+
+  #section-3 .underlay {
+    background-size: cover;
+    background-image: url(images/devon-houses.webp);
+  }
+
+  #section-4 .underlay {
+    background-size: cover;
+    background-image: url(images/fireplace.webp);
+  }
+
+  #contact {
+    height: auto;
+  }
+
+  .contact-list {
+    padding-left: 70px;
+    padding-top: 70px;
+  }
+
+  .content {
+    transition: width 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rhs-content {
+    left: 81vh;
+    width: 40%;
+    position: absolute;
+    padding-bottom: 50px;
+    font-size: 25px;
+    line-height: 33px;
+    gap: 15px;
+  }
+
+  .lhs-content {
+    width: 50%;
+    left: 100px;
+    position: absolute;
+    font-size: 17px;
+    line-height: 31px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+}
+
+.slide-up {
+  opacity: 0%;
+}
+
+.slide-up-animation {
+  animation: slide-up 1s;
+  animation-fill-mode: forwards
+}
+
+@keyframes slide-up {
+	0% {
+    transform: translateY(50%);
+	}
+	100% {
+    opacity: 100%;
+	}
+}
